@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Friend | FIND A BUDDY</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">FIND A BUDDY</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link"href="index.html">Home</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="FindAFriend.html">Find A Friend</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Eventbuddies.html">Event buddies</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link"href="Events.html">Events</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="LearnMore.html">Learn More</a>
+              </li>
+             <ul>
+                <a href="login.html">
+            <button class="btn btn-primary ms-lg-3">Log in</button>
+        </a> 
+        <a href="signup.html">
+            <button class="btn btn-primary ms-lg-3">Sign up</button>
+        </a>
+         </ul>
+        </div>
+      </nav>
+
+  
+    <main class="container my-4">
+    <div class="container mt-4">
+        <h2 class="buddy-title">🎉 Find Yourself A Friend🎉</h2>
+        <h3  class="header">Find your buddy here.</h3>
+        
+        <input type="text" id="searchBuddy" placeholder="Search by name..." class="form-control mb-3">
+        <div class="row g-4">
+            <!-- Profile 1 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/gaone1.jpg" class="card-img-top" alt="Gaone">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <span class="badge bg-success">Verified <i class="bi bi-check-circle-fill ms-1"></i></span>
+                        </div>
+                        <h5 class="card-title">Gaone</h5>
+                        <div class="Location">
+                            <i class="bi bi-geo-alt"></i>Gaborone, Botswana
+                        </div>
+                        <p class="text-muted">Photographer, Traveler</p>
+                        <div class="d-flex justify-content-center mb-3">
+                            <span class="badge bg-light text-dark me-2">Hiking</span>
+                            <span class="badge bg-light text-dark">Photography</span>
+                        </div>
+                         <button class="btn btn-primary connect-btn" onclick="openChat('Gaone', 'chatContainer1', 'chatUserName1')">Connect</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/Alex1.jpg" class="card-img-top" alt="Alex">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <span class="badge bg-success">Verified <i class="bi bi-check-circle-fill ms-1"></i></span>
+                        </div>
+                        <h5 class="card-title">Alex</h5>
+                        <div class="Location">
+                            <i class="bi bi-geo-alt"></i>New York, USA
+                        </div>
+                        <p class="text-muted">Lecturer, Artist</p>
+                        <div class="d-flex justify-content-center mb-3">
+                            <span class="badge bg-light text-dark me-2">Gardening</span>
+                            <span class="badge bg-light text-dark">Music</span>
+                        </div>
+                         <button class="btn btn-primary connect-btn" onclick="openChat('Alex', 'chatContainer1', 'chatUserName1')">Connect</button>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/jean1.jpg" class="card-img-top" alt="Jean">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jean</h5>
+                        <div class="Location">
+                            <i class="bi bi-geo-alt"></i>London, UK
+                        </div>
+
+                        <p class="text-muted">Student, Footballer</p>
+                        <div class="d-flex justify-content-center mb-3">
+                            <span class="badge bg-light text-dark me-2">Gaming</span>
+                            <span class="badge bg-light text-dark">Cooking</span>
+                        </div>
+                         <button class="btn btn-primary connect-btn" onclick="openChat('Jean', 'chatContainer1', 'chatUserName1')">Connect</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/kisha1.jpg" class="card-img-top" alt="Kisha">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Kisha</h5>
+                        <div class="Location">
+                            <i class="bi bi-geo-alt"></i>New York, USA
+                        </div>
+
+                        <p class="text-muted">Photographer, Foodie</p>
+                        <div class="d-flex justify-content-center mb-3">
+                            <span class="badge bg-light text-dark me-2">Photography</span>
+                            <span class="badge bg-light text-dark">Gardening</span>
+                        </div>
+                         <button class="btn btn-primary connect-btn" onclick="openChat('Kisha', 'chatContainer1', 'chatUserName1')">Connect</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/Katlego1.jpg" class="card-img-top" alt="Katlego">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Katlego</h5>
+                        <div class="Location">
+                            <i class="bi bi-geo-alt"></i>Durban, South Africa
+                        </div>
+                        <p class="text-muted">Teacher, Foodie</p>
+                        <div class="d-flex justify-content-center mb-3">
+                            <span class="badge bg-light text-dark me-2">Reading</span>
+                            <span class="badge bg-light text-dark">Cooking</span>
+                        </div>
+                         <button class="btn btn-primary connect-btn" onclick="openChat('Katlego', 'chatContainer1', 'chatUserName1')">Connect</button>
+                    </div>
+                </div> 
+
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/Lutho1.jpg" class="card-img-top" alt="Lutho">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lutho</h5>
+                        <div class="Location">
+                            <i class="bi bi-geo-alt"></i>Durban, South Africa
+                        </div>
+                        <p class="text-muted">Gamer, Footballer</p>
+                        <div class="d-flex justify-content-center mb-3">
+                            <span class="badge bg-light text-dark me-2">Reading</span>
+                            <span class="badge bg-light text-dark">Football</span>
+                        </div>
+                         <button class="btn btn-primary connect-btn" onclick="openChat('Lutho', 'chatContainer1', 'chatUserName1')">Connect</button>
+                    </div>
+                </div> 
+
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/Ona1.jpg" class="card-img-top" alt="Ona">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ona</h5>
+                        <div class="Location">
+                            <i class="bi bi-geo-alt"></i>Gaborone,Botswana
+                        </div>
+                        <p class="text-muted">Lecturer, Foodie</p>
+                        <div class="d-flex justify-content-center mb-3">
+                            <span class="badge bg-light text-dark me-2">Netball</span>
+                            <span class="badge bg-light text-dark">Cooking</span>
+                        </div>
+                         <button class="btn btn-primary connect-btn" onclick="openChat('Ona', 'chatContainer1', 'chatUserName1')">Connect</button>
+                    </div>
+                </div> 
+
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/Owami1.jpg" class="card-img-top" alt="Owami">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Owami</h5>
+                        <div class="Location">
+                            <i class="bi bi-geo-alt"></i>Durban, South Africa
+                        </div>
+                        <p class="text-muted">Teacher, Foodie</p>
+                        <div class="d-flex justify-content-center mb-3">
+                            <span class="badge bg-light text-dark me-2">Reading</span>
+                            <span class="badge bg-light text-dark">Cooking</span>
+                        </div>
+                         <button class="btn btn-primary connect-btn" onclick="openChat('Owami', 'chatContainer1', 'chatUserName1')">Connect</button>
+                    </div>
+                </div> 
+
+            </div>
+
+            
+        </div>
+        <script>
+    document.getElementById("searchBuddy").addEventListener("input", function() {
+        let searchQuery = this.value.toLowerCase();
+        let profiles = document.querySelectorAll(".card");
+
+        profiles.forEach(profile => {
+            let name = profile.querySelector(".card-title").innerText.toLowerCase();
+            if (name.includes(searchQuery) || searchQuery === "") {
+                profile.style.display = "block"; // Show matching profile
+            } else {
+                profile.style.display = "none"; // Hide non-matching profiles
+            }
+        });
+    });
+</script>
+
+
+
+<div id="chatContainer1" class="chat-popup">
+    <div class="chat-header">
+        <span id="chatUserName1"></span>
+        <button onclick="closeChat('chatContainer1')" class="close-btn">×</button>
+    </div>
+    <div id="chatMessages1" class="chat-body"></div>
+    <input type="text" id="chatInput1" class="chat-input" placeholder="Type a message...">
+    <button onclick="sendMessage('chatInput1', 'chatMessages1')" class="chat-send-btn">Send</button>
+</div>
+
+<script>
+    function openChat(userName, chatContainerId, chatUserNameId) {
+        console.log(`Opening chat for: ${userName} in ${chatContainerId}`); // Debugging
+
+        let chatPopup = document.getElementById(chatContainerId);
+        let chatUserName = document.getElementById(chatUserNameId);
+
+        if (!chatPopup || !chatUserName) {
+            console.error("Chat container not found:", chatContainerId);
+            return;
+        }
+
+        chatUserName.innerText = `Chat with ${userName}`;
+    
+
+    // Position the chat next to the clicked profile
+    let profileCard = event.target.closest(".card"); // Get the clicked profile's card
+    let rect = profileCard.getBoundingClientRect(); // Get profile's position
+
+    chatPopup.style.top = `${window.scrollY + rect.top}px`;  // Position chat near profile
+    chatPopup.style.left = `${rect.right + 10}px`;  // Place chat box to the right of profile
+    chatPopup.style.display = "block";
+}
+
+    
+
+function closeChat(chatContainerId) {
+    document.getElementById(chatContainerId).style.display = "none";
+}
+
+
+    function closeChat(chatContainerId) {
+        let chatPopup = document.getElementById(chatContainerId);
+        if (chatPopup) {
+            chatPopup.style.display = "none";
+        }
+    }
+
+    function sendMessage(chatInputId, chatMessagesId) {
+        let input = document.getElementById(chatInputId);
+        let message = input.value.trim();
+
+        if (message) {
+            let chatBody = document.getElementById(chatMessagesId);
+            let newMessage = document.createElement("p");
+            newMessage.textContent = message;
+            chatBody.appendChild(newMessage);
+            input.value = ""; // Clear input after sending
+        }
+    }
+</script>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Brand Column -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5>Find A Buddy</h5>
+                <p class="mb-0">Connecting people since 2023.</p>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    <li class="mb-2"><a href="findAfriend.html" class="text-white text-decoration-none">Find a Friend</a></li>
+                    <li><a href="Contact.html" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Column -->
+            <div class="col-md-4">
+                <h5 class="mb-3">Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-3 fs-5"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- Copyright -->
+        <div class="text-center">
+            <p class="mb-0 small">&copy; 2023 Find A Buddy. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    <script src="JS/chat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+
+
